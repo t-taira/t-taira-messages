@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  invoked_at: 2017-02-22 07:54:47
+
+two:
+  content: MyText
+  invoked_at: 2017-02-22 07:54:47
