@@ -4,12 +4,8 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
   def index
-    #@messages = Message.all
-
-    respond_to do |format|
-      format.html { @messages = Message.all }
-      format.json { @messages = Message.active }
-    end
+    @messages = Message.all
+    @messages = Message.now if params[:type] == 'now'
   end
 
   # GET /messages/1
